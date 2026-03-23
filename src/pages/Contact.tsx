@@ -16,9 +16,9 @@ export function Contact() {
 
     // Create mailto link with pre-filled data
     const mailtoLink = `mailto:info@beacondev.org?subject=${encodeURIComponent(
-      formData.subject
+      formData.subject,
     )}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
     )}`;
 
     // Open user's email client
@@ -49,13 +49,12 @@ export function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div className="bg-gray-50 rounded-lg shadow-md p-8">
-              <h2 className="text-3xl text-[#0c6708] mb-6">Send us a Message</h2>
+              <h2 className="text-3xl text-[#0c6708] mb-6">
+                Send us a Message
+              </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-gray-700 mb-2"
-                  >
+                  <label htmlFor="name" className="block text-gray-700 mb-2">
                     Your Name *
                   </label>
                   <input
@@ -72,10 +71,7 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-gray-700 mb-2"
-                  >
+                  <label htmlFor="email" className="block text-gray-700 mb-2">
                     Your Email *
                   </label>
                   <input
@@ -92,10 +88,7 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="subject"
-                    className="block text-gray-700 mb-2"
-                  >
+                  <label htmlFor="subject" className="block text-gray-700 mb-2">
                     Subject *
                   </label>
                   <input
@@ -112,10 +105,7 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-gray-700 mb-2"
-                  >
+                  <label htmlFor="message" className="block text-gray-700 mb-2">
                     Message *
                   </label>
                   <textarea
@@ -203,7 +193,7 @@ export function Contact() {
               </div>
 
               {/* Office Hours */}
-              <div className="mt-12 bg-gray-50 rounded-lg p-6">
+              {/* <div className="mt-12 bg-gray-50 rounded-lg p-6">
                 <h3 className="text-xl text-[#0c6708] mb-4">Office Hours</h3>
                 <div className="space-y-2 text-gray-700">
                   <p>
@@ -218,7 +208,7 @@ export function Contact() {
                     <span className="font-medium">Sunday:</span> Closed
                   </p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="mt-8 rounded-lg border border-[#0c6708]/10 bg-[#0c6708]/5 p-6">
                 <div className="flex items-start gap-4">
