@@ -5,7 +5,8 @@ export function Hero() {
       className="relative h-[600px] flex items-center justify-center"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1696041757950-62e2c030283b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBkZXZlbG9wbWVudCUyMGhhbmRzJTIwdG9nZXRoZXJ8ZW58MXx8fHwxNzc0MTE5MzU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral')",
+          "url('/hero.jpg')",
+          // "url('https://images.unsplash.com/photo-1696041757950-62e2c030283b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBkZXZlbG9wbWVudCUyMGhhbmRzJTIwdG9nZXRoZXJ8ZW58MXx8fHwxNzc0MTE5MzU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

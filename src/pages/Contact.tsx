@@ -1,6 +1,6 @@
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { HandCoins, MapPin, Phone, Mail } from "lucide-react";
 import { useState, FormEvent } from "react";
 
 export function Contact() {
@@ -217,6 +217,30 @@ export function Contact() {
                   <p>
                     <span className="font-medium">Sunday:</span> Closed
                   </p>
+                </div>
+              </div>
+
+              <div className="mt-8 rounded-lg border border-[#0c6708]/10 bg-[#0c6708]/5 p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[#c5ba80]/20 flex items-center justify-center flex-shrink-0">
+                    <HandCoins size={24} className="text-[#0c6708]" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl text-[#0c6708] mb-2">
+                      Donate and Support
+                    </h3>
+                    <p className="text-gray-700 mb-4 leading-relaxed">
+                      If you would like to support our work, we would love to
+                      hear from you. Your generosity helps us keep making a
+                      difference.
+                    </p>
+                    <a
+                      href="mailto:info@beacondev.org?subject=Donation%20and%20Support%20Inquiry"
+                      className="inline-flex items-center justify-center rounded-full bg-[#0c6708] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#068c09]"
+                    >
+                      Contact Us to Donate
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
