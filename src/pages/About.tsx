@@ -383,7 +383,7 @@ export function About() {
             role="dialog"
             aria-modal="true"
             aria-labelledby="trustee-modal-title"
-            className="relative w-full max-w-2xl overflow-hidden rounded-3xl bg-white shadow-2xl"
+            className="relative w-full max-w-2xl overflow-hidden rounded-3xl bg-white shadow-2xl max-h-[88vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -396,8 +396,8 @@ export function About() {
             </button>
 
             <div className="grid grid-cols-1 md:grid-cols-[240px_1fr]">
-              <div className="bg-[#0c6708]/5 p-6 md:p-0">
-                <div className="mx-auto flex h-64 w-64 items-center justify-center overflow-hidden rounded-full border-4 border-[#0c6708] shadow-xl md:my-10 md:h-56 md:w-56">
+              <div className="bg-[#0c6708]/5 p-4 md:p-0">
+                <div className="mx-auto flex h-52 w-52 items-center justify-center overflow-hidden rounded-full border-4 border-[#0c6708] shadow-xl md:my-10 md:h-56 md:w-56">
                   <img
                     src={selectedTrustee.image}
                     alt={selectedTrustee.name}
@@ -406,17 +406,17 @@ export function About() {
                 </div>
               </div>
 
-              <div className="p-6 md:p-8">
+              <div className="p-5 md:p-8">
                 <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-[#068c09]">
                   Trustee Profile
                 </p>
                 <h3
                   id="trustee-modal-title"
-                  className="text-3xl text-[#0c6708]"
+                  className="text-2xl md:text-3xl text-[#0c6708]"
                 >
                   {selectedTrustee.name}
                 </h3>
-                <p className="mt-2 text-lg text-[#068c09]">
+                <p className="mt-2 text-base md:text-lg text-[#068c09]">
                   {selectedTrustee.title}
                 </p>
 
@@ -424,8 +424,8 @@ export function About() {
                   <h4 className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-gray-500">
                     Full Citation
                   </h4>
-                  <div className="max-h-[45vh] overflow-y-auto rounded-2xl bg-gray-50 p-5">
-                    <p className="text-sm leading-7 text-gray-700">
+                  <div className="max-h-[32vh] overflow-y-auto rounded-2xl bg-gray-50 p-4 sm:max-h-[45vh] sm:p-5">
+                    <p className="text-sm leading-6 text-gray-700">
                       {selectedTrustee.fullCitation}
                     </p>
                   </div>
